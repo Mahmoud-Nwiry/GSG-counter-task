@@ -15,10 +15,10 @@ class App extends Component {
   render(){
     return (
       <div className="App">
-        <Counter getTotal={this.getTotal} />
-        <Counter getTotal={this.getTotal} />
-        <Counter getTotal={this.getTotal} />
-        <Counter getTotal={this.getTotal} />
+        <Counter initCount={5} getTotal={this.getTotal} />
+        <Counter initCount={3} getTotal={this.getTotal} />
+        <Counter  getTotal={this.getTotal} />
+        <Counter initCount={0} getTotal={this.getTotal} />
         <p>Total : {this.state.total}</p>
       </div>
     );
